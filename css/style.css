@@ -2,6 +2,12 @@ body {
     background-color: #ece4e4;
 }
 
+select {
+    border: none;
+    background-color: #ece4e4;
+    padding: none;
+}
+
 .header {
     display: flex;
     width: 100%;
@@ -35,6 +41,10 @@ body {
 #search-bar {
     width: 350px;
     height: 30px;
+}
+
+div input {
+    margin-right: 5px;
 }
 
 #search-button {
@@ -235,4 +245,15 @@ body {
     text-decoration: none;
     color: #111;
     font-size: 18px;
+}
+
+form input {
+    width: 250px;
+    margin-top: 5px;
+    display: block;
+}
+
+form {
+    display: block;
+    padding: 50px;
 }

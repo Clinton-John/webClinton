@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Sendy Fulfillment| online Shop</title>
 </head>
 
@@ -18,18 +19,26 @@
             <a href="#">Buy on Sendy</a>
         </div>
         <div class="header2">
-            <a href="" id=""><img src="images/" alt="">Log in</a>
-            <a href="">English</a>
-            <a href="">Dark mode</a>
+            <a href="login.html" id="login-button" onclick="login()">Log in</a>
+            <a href="#"><select>
+                <option value="option1">English</option>
+                <option value="option2">Swahili</option>
+                <option value="option3">French</option>
+              </select></a>
+            <a href="#"><select>
+                <option value="Darkmode">Dark mode</option>
+                <option value="Lightmode">Light mode</option>
+              </select></a>
         </div>
 
     </div>
+
     <div class="nav-bar">
         <div id="sendy">
             <p>Sendy <img src="images/star.png" id="icon" alt=""></p>
         </div>
         <div>
-            <input type="text" id="search-bar" placeholder="Sarch products, brands and categories"><input type="button" value="SEARCH" id="search-button">
+            <input type="text" id="search-bar" placeholder="Sarch  for products, brands and categories"><input type="button" value="SEARCH" id="search-button">
         </div>
         <div class="header2">
             <a href="#"><img src="images/profileicon.png" alt="" id="icon"> Account</a>
