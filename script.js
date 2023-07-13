@@ -1,20 +1,14 @@
 //The login/ sign up section
 let getSubmit = document.getElementById("submit-button");
 getSubmit.onclick = function(event) {
-        event.preventDefault();
-        //   window.open("index.html");
-        window.location.href = "index.html";
-        //window.history.back();
-    }
-    /*
-    // The Dark/Light Mode
-    let getBody = document.body;
-    let getDark = document.getElementById("dark");
-    getDark.onclick = function() {
-        getBody.style.cssText = "background-color:#111;";
-        document.body.classList.toggle("light-theme");
-    }
-    */
+    event.preventDefault();
+    //   window.open("index.html");
+    window.location.href = "index.html";
+    //window.history.back();
+}
+
+// The Dark/Light Mode
+
 function darkTheme() {
     var getMode = document.getElementById("mode-select").value;
     if (getMode == "Lightmode") {
@@ -23,4 +17,10 @@ function darkTheme() {
     } else {
         document.body.classList.toggle("dark-theme");
     }
+}
+
+function search() {
+    setTimeout(function() {
+        alert("We can't find a match to the item");
+    }, 3000);
 }

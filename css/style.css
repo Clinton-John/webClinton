@@ -1,4 +1,5 @@
 body {
+    font-size: 1rem;
     background-color: #ece4e4;
 }
 
@@ -95,6 +96,7 @@ div input {
 }
 
 .body1-sect1 {
+    padding: 15px;
     width: 20%;
     margin: 5px;
     background-color: var(--secondary-color);
@@ -102,15 +104,9 @@ div input {
     display: inline;
 }
 
-.body1-sect1 ul {
-    list-style: none;
-}
-
-.body1-sect1 ul li {
-    padding-top: 5px;
-}
-
 .body1-sect1 a {
+    padding-left: 10px;
+    display: block;
     cursor: pointer;
     text-decoration: none;
     list-style: none;
@@ -152,22 +148,16 @@ div input {
     margin: 5px;
     background-color: var(--secondary-color);
     align-items: center;
+    padding-bottom: 10px;
     height: 240px;
 }
 
-.sect3-part1 ul li a {
+.sect3-part1 a {
     padding: 5px;
     display: flex;
     text-decoration: none;
     align-items: center;
     color: var(--primary-color);
-}
-
-.sect3-part1 ul {
-    list-style: none;
-}
-
-.sect3-part1 ul li {
     padding-top: 15px;
     align-items: center;
 }
@@ -279,4 +269,95 @@ form {
     justify-content: center;
     display: flex;
     align-items: center;
+}
+
+
+/*MOBILE VERSION*/
+
+@media only screen and (max-width:600px) {
+    .header1 a {
+        margin-right: 5px;
+    }
+    .header2 a {
+        margin-right: 5px;
+    }
+    .nav-bar {
+        font-size: 15px;
+        background-color: var(--secondary-color);
+        width: 100%;
+        height: 50px;
+    }
+    #search-bar {
+        width: 150px;
+        height: 20px;
+    }
+    #search-button {
+        width: 45px;
+        height: 20px;
+        padding-left: 5px;
+    }
+    #sendy {
+        padding-top: 5px;
+    }
+    #icon {
+        width: 15px;
+    }
+    #nav-help {
+        display: none;
+    }
+    .body1 {
+        padding: 0;
+        height: 400px;
+    }
+    .body1-sect1 {
+        width: 20%;
+        margin: 3px;
+        border-radius: 5px;
+    }
+    .body1-sect1 ul li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .footer2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer2 div {
+        text-align: center;
+        align-items: center;
+    }
+    .text-overlay {
+        font-size: 15px;
+        bottom: 50px;
+        padding: 5px 10px;
+    }
+    #products {
+        height: 400px;
+        width: 100%;
+    }
+    .body1-sect3 {
+        width: 20%;
+        margin: 5px;
+        height: 100%;
+    }
+    .sect3-part1 ul li a {
+        padding: 3px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .sect3-part1 ul {
+        padding: none;
+        list-style: none;
+    }
+    .sect3-part1 ul li {
+        padding-top: 10px;
+        align-items: center;
+    }
+    #sect3-image {
+        width: 20px;
+        height: 20px;
+    }
+    .sect3-part2 img {
+        display: none;
+    }
 }
