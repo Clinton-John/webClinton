@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sendy account login</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -14,11 +15,14 @@
     </nav>
     <div>
         <div class="login-form">
-            <form action="">
+            <div class="errorDisplay"></div>
+            <form action="" method="get" id="form">
                 <label for="name">Username:</label>
-                <input type="text" placeholder="Enter your name" name="username">
+                <input type="text" placeholder="Enter your name" name="username" id="username" required>
                 <label for="email">Email:</label>
-                <input type="text" placeholder="your email" name="email">
+                <input type="text" placeholder="your email" name="email" id="email" required>
+                <label for="email">Password:</label>
+                <input type="password" placeholder="Password" name="password" id="password" required>
                 <label for="submit"></label>
                 <input type="submit" placeholder="Log in" id="submit-button">
                 <p>Don't have an account ? <a href="#">Sign Up</a></p>

@@ -1,3 +1,12 @@
+body::after {
+    /* preloading the images to avoid the flickering in the websites */
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    content: url("../images/nike1.jpg") url("../images/blackods.jpg") url("../images/chanelperfume.jpg") url("../images/earpods2.jpg") url("../images/kettle.jpg");
+}
+
 body {
     font-size: 1rem;
     background-color: #ece4e4;
@@ -272,92 +281,87 @@ form {
 }
 
 
+/* the flash sales section */
+
+.body3-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    background-color: #ff0000;
+}
+
+.body3-nav div {
+    padding: 0 10px;
+}
+
+.flash-sales a {
+    font-size: 18px;
+    display: block;
+}
+
+.image-container {
+    width: 100%;
+    height: 250px;
+    overflow-x: visible;
+    display: flex;
+    background-color: #fff;
+}
+
+.container {
+    width: 180px;
+    height: 200px;
+    padding: 10px;
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.avatar-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    background-image: url("../images/nike1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#image1 {
+    background-image: url("../images/blackods.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#image2 {
+    background-image: url("../images/chanelperfume.jpg");
+}
+
+#image3 {
+    background-image: url("../images/earpods2.jpg");
+}
+
+#image4 {
+    background-image: url("../images/kettle.jpg");
+}
+
+.avatar-about-image a {
+    color: #111;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.avatar-about-image p {
+    color: 111;
+    opacity: 0.5;
+}
+
+
 /*MOBILE VERSION*/
 
-@media only screen and (max-width:600px) {
-    .header1 a {
-        margin-right: 5px;
-    }
-    .header2 a {
-        margin-right: 5px;
-    }
-    .nav-bar {
-        font-size: 15px;
-        background-color: var(--secondary-color);
-        width: 100%;
-        height: 50px;
-    }
-    #search-bar {
-        width: 150px;
-        height: 20px;
-    }
-    #search-button {
-        width: 45px;
-        height: 20px;
-        padding-left: 5px;
-    }
-    #sendy {
-        padding-top: 5px;
-    }
-    #icon {
-        width: 15px;
-    }
-    #nav-help {
-        display: none;
-    }
-    .body1 {
-        padding: 0;
-        height: 400px;
-    }
-    .body1-sect1 {
-        width: 20%;
-        margin: 3px;
-        border-radius: 5px;
-    }
-    .body1-sect1 ul li {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .footer2 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .footer2 div {
-        text-align: center;
-        align-items: center;
-    }
-    .text-overlay {
-        font-size: 15px;
-        bottom: 50px;
-        padding: 5px 10px;
-    }
-    #products {
-        height: 400px;
-        width: 100%;
-    }
-    .body1-sect3 {
-        width: 20%;
-        margin: 5px;
-        height: 100%;
-    }
-    .sect3-part1 ul li a {
-        padding: 3px;
-        flex-wrap: wrap;
-        display: flex;
-    }
-    .sect3-part1 ul {
-        padding: none;
-        list-style: none;
-    }
-    .sect3-part1 ul li {
-        padding-top: 10px;
-        align-items: center;
-    }
-    #sect3-image {
-        width: 20px;
-        height: 20px;
-    }
-    .sect3-part2 img {
-        display: none;
-    }
-}
+@media (max-width:600px) {}
