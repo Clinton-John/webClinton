@@ -61,11 +61,15 @@ if (currenthour >= 4 && currenthour <= 13) {
 
 newElement.style.cssText = "color:red;  font-size:20px; position:top;"
 */
-let getSubmit = document.getElementById("submit-button");
-getSubmit.onclick = function(event) {
 
-    event.preventDefault();
-    //   window.open("index.html");
-    window.location.href = "index.html";
-    // window.history.back();
-}
+
+
+// let getSubmit = document.getElementById("submit-button");
+// getSubmit.onclick = function(event) {
+
+//     event.preventDefault();
+//     //   window.open("index.html");
+//     window.location.href = "index.html";
+//     // window.history.back();
+
+// }

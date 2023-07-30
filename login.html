@@ -16,19 +16,48 @@
     <div>
         <div class="login-form">
             <div class="errorDisplay"></div>
-            <form action="" method="get" id="form">
+            <form action="" name="myform" method="get" id="form" onsubmit="validateForm()">
                 <label for="name">Username:</label>
-                <input type="text" placeholder="Enter your name" name="username" id="username" required>
+                <input type="text" placeholder="Enter your name" name="username" id="username">
                 <label for="email">Email:</label>
-                <input type="text" placeholder="your email" name="email" id="email" required>
+                <input type="text" placeholder="your email" name="email" id="email">
                 <label for="email">Password:</label>
-                <input type="password" placeholder="Password" name="password" id="password" required>
+                <input type="password" placeholder="Password" name="password" id="password">
                 <label for="submit"></label>
                 <input type="submit" placeholder="Log in" id="submit-button">
                 <p>Don't have an account ? <a href="#">Sign Up</a></p>
             </form>
         </div>
 </body>
+<script>
+    function validateForm() {
+
+        var username = document.myform.username.value;
+        var password = document.myform.password.value;
+        var email = document.myform.email.value;
+        let status = true;
+        if (status) {
+            if (username == "" || username == null) {
+                alert("The username cannot be blank");
+                return false;
+            } else if (email == "" || email == null) {
+                alert("please enter a valid email");
+                return false;
+            }
+            if (password.length < 6) {
+                alert("The password must contain atleast 6 characters");
+                return false;
+            }
+            window.location.href = "index.html";
+
+
+        } else {
+
+        }
+
+
+    }
+</script>
 <script src="script.js"></script>
 
 </html>
